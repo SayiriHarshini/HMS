@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='https://fonts.googleapis.com/css?family=Eater' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Knewave' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Mogra' rel='stylesheet'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<title>Hostel Management System</title>
+  <style>
+  .navbar-custom
+    {
+      font-family: Mogra;
+      border: none;
+           background-color:#600000;
+    }
+      #grad
+      {
+        background:brown;
+        background:linear-gradient(#900000,#380000,#200000);
+      }
+      .background
+      {
+        background-image: url("https://raw.githubusercontent.com/sanya2701/Hostel-Mgt-System/master/HMS/New%20folder/41.jpg");
+        background-size: 100%100%;
+        width:100%;
+      }
+      </style>
+</head>
+{% with messages = get_flashed_messages() %}
+  {% if messages %}
+    {% for message in messages %}
+     <center><b> {{ message }}</b></center>
+    {% endfor %}
+  {% endif %}
+{% endwith %}
+<body	>
+	<div id="grad">
+		<div class="container-fluid">
+		
+		<div class="row">
+           <div class="col-sm-8" style="color:white; font-family:inherit; padding:40px"><h1>Hostel Management System
+           </h1></div>
+       </div>
+
+  <nav class="navbar navbar-inverse navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">HMS</a>
+    </div>
+    <form method="POST">
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="{{url_for('home')}}">Home</a></li>
+        <li><a href="{{url_for('About')}}">About</a></li>
+        <li><a href="{{url_for('MessMenu')}}">MessMenu</a></li>
+
+      </ul>
+      <ul class="nav navbar-nav navbar-right">s
+        <li><a href="{{url_for('AdminRegister')}}"><span class="glyphicon glyphicon-user"></span>Admin Register</a></li>
+        <li><a href="{{url_for('Adminlogin')}}">Admin login</a></li>
+      </ul>
+    </div>
+  </div> 
+</nav>
+</div>
+</div>
+ <div><img class="img-responsive" src="https://www.aiht.ac.in/vendor/images/hostelimg1.jpg" height="2px" width="100%">
+</div>
+</form>
+</body>
+</html>

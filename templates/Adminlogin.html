@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adminlogin</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body{
+          background-image: url('https://images.unsplash.com/photo-1555854877-bab0e564b8d5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aG9zdGVsfGVufDB8fDB8fA%3D%3D&w=1000&q=80');
+            background-size: cover;
+            font-family: 'Times New Roman', Times, serif;
+            padding-top:150px;
+            color:blue;
+        }
+        .form-gap {
+        padding-top: 70px;
+    }   
+    .panel-body{
+        width: 100%;
+        max-width: 650px;
+        background:rgba(0, 0, 0, 0.5);
+        padding: 28px;
+        margin: 0 28px;
+        border-radius: 10px;
+        box-shadow: inset -2px 2px 2px black;
+    }
+    </style>
+
+</head>
+{% with messages = get_flashed_messages() %}
+  {% if messages %}
+    {% for message in messages %}
+     <center><b> {{ message }}</b></center>
+    {% endfor %}
+  {% endif %}
+{% endwith %}
+<body>
+<form method="POST">
+<div class="form-gap"></div>
+<div class="container">
+	<div class="row">
+		<div class="col-md-4 col-md-offset-4">
+      
+            
+              <div class="panel-body">
+                <div class="text-center"></div>
+                  <h2 class="text-center">Admin Login</h2>
+                  
+                   
+                      <div class="form-group">
+                        <div class="input-group">
+                          <span class="input-group-addon"></span>
+                          <input type="text" class="form-control" name="Userid" placeholder="Userid">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="input-group"></div>
+                        <input type="password" class="form-control" name="password" placeholder="Password"><br>
+                        <div class="form-group">
+                          <div class="input-group"></div>
+
+                        <button class="btn form-control text-submit btn-primary"><a href="{{url_for('index')}}"></a>LOGIN</button>
+                    
+                      </div>
+                      <div class="form-group">
+                        <center><a href="{{url_for('AdminRegister')}}">No Account?</a></center><br>
+                        <center><a href="{{url_for('forgotpassword')}}">Forget password?</a></center>
+                        </div>    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+	</div>
+</div>
+</form>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Students</title>
+    <style>
+         table,td{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        body {
+            background-image: url('https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?w=2000');
+            background-size:150%150%;
+        }
+        .btnstyle {
+            background-color:blue;
+            color:white;
+            padding:10px;
+            border-radius: 35px;
+            border:none;
+            font-size: 30px;
+            margin: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+{% with messages = get_flashed_messages() %}
+  {% if messages %}
+    {% for message in messages %}
+     <center><b>{{ message }}</b></center>
+    {% endfor %}
+  {% endif %}
+{% endwith %}
+<body>    
+   <div>
+        <a href="{{url_for('AddStudents')}}"><button class="btnstyle">Add Students</button></a>
+        <a href="{{url_for('index')}}"><button class="btnstyle">Back</button></a>
+   </div>
+   <table cellpadding="10px">
+    <tr>    
+        <td><h2>Studentid</h2></td>
+        <td><h2>Studentname</h2></td>
+        <td><h2>course</h2></td>
+        <td><h2>Roomno</h2></td>
+        <td><h2>Mobileno</h2></td>
+        <td><h2>email</h2></td>
+        <td><h2>Address</h2></td>
+    </tr>
+    {% for i in data %}
+        <tr>
+            <td>{{i[0]}}</td>
+            <td>{{i[1]}}</td>
+            <td>{{i[2]}}</td>
+            <td>{{i[3]}}</td>
+            <td>{{i[4]}}</td>
+            <td>{{i[5]}}</td>
+            <td>{{i[6]}}</td>
+            <td><a href="{{url_for('update',Studentid=i[0])}}">Update</a></td>
+            <td><a href="{{url_for('delete',Studentid=i[0])}}">Delete</a></td>
+        </tr>
+    {% endfor %}   
+    </table>    
+</body>
+</html>

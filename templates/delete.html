@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add note</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+        body {
+            background-color: khaki;
+        }
+        .btnstyle {
+            background-color:blue;
+            color:white;
+            padding:10px;
+            border-radius: 8px;
+            border:none;
+            margin: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <button style="float:right" class="btnstyle">Back</button>
+    <form method="POST">
+        <div>
+            <h1> Delete Students</h1>
+        </div>
+        <label>Studentname</label>
+        <p><input  type="text" name="Studentname" required/></p>
+        <label>Studentid</label>
+        <p><input placeholder="Enter Studentid" type="text" name="Studentid" required/></p>
+        <label>Course</label>
+        <p><input placeholder="Enter Course" type="text" name="Course" required/></p>
+        <label>Roomno</label>
+        <p><input placeholder="Enter Room" type="number" name="Roomno" required/></p>
+        <label>Mobileno</label>
+        <p><input placeholder="Enter Mobileno" type="text" name="Mobileno" required/></p>
+        <label>Email</label>
+        <p><input placeholder="Enter Email" type="text" name="Email" required/></p>
+        <label>Address</label>
+        <p><textarea rows="9" style="width:40%" placeholder="Enter Address" name="Address" required></textarea></p>
+        <button class="btnstyle">Submit</button></a>
+        <button class="btnstyle">Back</button>
+    </form>
+</body>
+</html>

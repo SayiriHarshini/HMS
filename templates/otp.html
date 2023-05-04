@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body{
+          background-image: url('https://cdn.w600.comps.canstockphoto.com/hostel-on-a-sunny-day-stock-photography_csp8492350.jpg');
+            background-size: cover;
+            font-family: 'Times New Roman', Times, serif;
+            padding-top:150px;
+            color:white;
+        }
+        .form-gap {
+        padding-top: 70px;
+    }   
+    .panel-body{
+        width: 100%;
+        max-width: 650px;
+        background:rgba(0, 0, 0, 0.5);
+        padding: 28px;
+        margin: 0 28px;
+        border-radius: 10px;
+        box-shadow: inset -2px 2px 2px white;
+    }
+    </style>
+
+</head>
+{% with messages = get_flashed_messages() %}
+  {% if messages %}
+    {% for message in messages %}
+     <center><b> {{ message }}</b></center>
+    {% endfor %}
+  {% endif %}
+{% endwith %}
+<body>
+  <form method="POST"action="{{url_for('otp',otp=otp,Userid=Userid,email=email,password=password,conformpassword=conformpassword)}}">
+<div class="form-gap"></div>
+<div class="container">
+	<div class="row">
+		<div class="col-md-4 col-md-offset-4">
+            
+              <div class="panel-body">
+                <div class="text-center"></div>
+                  <h2 class="text-center">Enter OTP</h2>
+          
+                      <div class="form-group">
+                        <div class="input-group">
+                          <span class="input-group-addon"><i class="glyphicon glyphicon-envelope color-blue"></i></span>
+                          <input User="otp" name="otp" placeholder="Otp" class="form-control"  type="otp" required>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <input name="recover-submit" class="btn btn-lg btn-primary btn-block" value="SUBMIT" type="submit">
+                      </div>
+                      
+              
+                    </form>
+    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+	</div>
+</div>
+
+</body>
+</html>

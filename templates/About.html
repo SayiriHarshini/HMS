@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='https://fonts.googleapis.com/css?family=Eater' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Knewave' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Mogra' rel='stylesheet'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <title>login</title>
+    <style>
+    .navbar-custom
+    {
+      font-family: Mogra;
+      border: none;
+           background-color:#600000;
+    }
+      #grad
+      {
+        background:brown;
+        background:linear-gradient(#900000,#380000,#200000);
+      }
+      .background
+      {
+        background-image:url("https://t3.ftcdn.net/jpg/01/91/78/32/360_F_191783282_0TVrx5VrvrkpDHSKdjjI87HkbXJy5TMw.jpg");
+        background-size: 100%100%;
+        width:100%;
+      }
+    
+ </style>
+</head>
+<body>
+  
+  <div id="grad">
+    <div class="container-fluid">
+    
+    <div class="row">
+           <div class="col-sm-8" style="color:white; font-family:inherit; padding:40px"><h1>Hostel Management System</h1></div>
+       </div>
+
+       <nav class="navbar navbar-inverse navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">HMS</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="{{url_for('home')}}">Home</a></li>
+        <li class="active"><a href="{{url_for('About')}}">About</a></li>
+        <li><a href="{{url_for('MessMenu')}}">MessMenu</a></li>
+      </ul>
+       <ul class="nav navbar-nav navbar-right">
+        <li><a href="{{url_for('AdminRegister')}}"><span class="glyphicon glyphicon-user"></span>Admin Register</a></li>
+        <li><a href="{{url_for('Adminlogin')}}">Admin login</a></li>
+    
+      </ul>
+    </div>
+  </div>
+</nav>
+
+</div>
+</div>
+<div class="container" style="overflow: auto;">
+  <p>
+  <img src="https://raw.githubusercontent.com/sanya2701/Hostel-Mgt-System/master/HMS/New%20folder/25.jpg" class="img" style="float:right;height:250px; width:450px; margin:50px;">
+  <h1 style="color:#600000; font-family:Mogra; margin-top:50px">&nbsp;&nbsp;&nbsp;&nbsp;About Us</h1><br/>
+  <p style="font-size:15px; font-family:Mogra ">Hostel management system offers a full featured accomodation system to efficiently manage the entire residential facility in the university of college. Reducing the staff & paper works, this accomodation software will keep the updated records of students, their meal, lodging, transfer room and other facilities. The software allocates rooms to the registered students based on their preferences and records their details of using food, lodging and other facilities along with fee and other advance payment details. The system also gathers a feedback on the room, food and other amenities on a regular basis and sends fee reminders to all registered students.</p>
+  </p>
+  <img src=" https://assets.techcircle.in/images/2016/05/hostel.jpg" class="img" style="float:left;height:250px; width:450px; margin:50px;">
+  <h1 style="color:#600000; font-family:Mogra; margin-top:50px">&nbsp;&nbsp;&nbsp;&nbsp;</h1><br/>
+  <p style="font-size:15px; font-family:Mogra ">College Choice helps students and their families find the college program that meets their needs. Our resources include college rankings, lists of the best colleges by state, and program rankings at the undergraduate and graduate levels. These rankings use a custom methodology that takes a student-centered approach. By weighing factors like median student debt and average graduate salaries, our rankings help prospective students make informed choices.</p>
+</p>
+<img src="https://cdn.internationalstudent.com/images/stock-images/youth-hostel.jpg" class="img" style="float:right;height:250px; width:450px; margin:50px;">
+<h1 style="color:#600000; font-family:Mogra; margin-top:50px">&nbsp;&nbsp;&nbsp;&nbsp;</h1><br/>
+<p style="font-size:15px; font-family:Mogra "> College Choice provides rankings, guides, and resources for students. Our site uses credible sources, including the Bureau of Labor Statistics and the National Center for Education Statistics, to evaluate colleges and careers. We also draw on data from College Scorecard, a tool from the U.S. Department of Education. We designed a custom methodology to rank programs that prioritizes academic quality, affordability, and return on investment. The methodology weighs factors such as graduation rate, student debt, and the average salaries of graduates to recommend programs. </p>
+  </div>
+  
+
+
+</body>
+</html>

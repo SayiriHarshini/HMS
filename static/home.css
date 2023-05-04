@@ -1,0 +1,14 @@
+.navbar-custom
+		{
+			font-family: Mogra;
+			border: none;
+           background-color:#380000;
+           color:#700000;
+           height:25px;
+           margin-top: 0px;
+		}
+			#grad
+			{
+				background:brown;
+				background:linear-gradient(#900000,#380000,#200000);
+			}

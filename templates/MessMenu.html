@@ -1,0 +1,142 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='https://fonts.googleapis.com/css?family=Eater' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Knewave' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Mogra' rel='stylesheet'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <title>login</title>
+    <style>
+    .navbar-custom
+     {
+           font-family: Mogra;
+           border: none;
+           background-color:#600000;
+     }
+      #grad
+      {
+        background:brown;
+        background:linear-gradient(#900000,#380000,#200000);
+      }
+      .background
+      {
+        background-image: url("https://t3.ftcdn.net/jpg/01/91/78/32/360_F_191783282_0TVrx5VrvrkpDHSKdjjI87HkbXJy5TMw.jpg");
+        background-size: 100%100%;
+        width:100%;
+      }
+      .form-group
+      {
+        font-family: Mogra;
+        margin:0 250px 0 250px;
+      }
+      .btn{
+        background-color: #600000;
+      }
+      .al{
+      	margin-top: 20px;
+      }
+ </style>
+</head>
+<body>
+  
+  <div id="grad">
+    <div class="container-fluid">
+    
+    <div class="row">
+           <div class="col-sm-8" style="color:white; font-family:inherit; padding:40px"><h1>Hostel Management System</h1></div>
+       </div>
+
+       <nav class="navbar navbar-inverse navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">HMS</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+            <li><a href="{{url_for('home')}}">Home</a></li>
+            <li><a href="{{url_for('About')}}">About</a></li>
+            <li class="active"><a href="{{url_for('MessMenu')}}">MessMenu</a></li>
+        </ul>
+
+          <ul class="nav navbar-nav navbar-right">s
+            <li><a href="{{url_for('AdminRegister')}}"><span class="glyphicon glyphicon-user"></span>Admin Register</a></li>
+            <li><a href="{{url_for('Adminlogin')}}">Admin login</a></li>
+          </ul>
+      </ul>
+
+    </div>
+  </div>
+</nav>
+</div>
+</div> 
+
+<div class="background">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4" style="margin-top: 20px;">
+        <div class="thumbnail">
+            <img src="https://raw.githubusercontent.com/sanya2701/Hostel-Mgt-System/master/HMS/New%20folder/m5.png" alt="Lights" style="width:100%; height:250px; ">
+           
+            <div class="centered"; style="color:black;">Monday</div>
+            </a>
+        </div>
+      </div>
+      <div class="col-md-4" style="margin-top: 20px;">
+      <div class="thumbnail">
+            <img src="https://raw.githubusercontent.com/sanya2701/Hostel-Mgt-System/master/HMS/New%20folder/m3.png" alt="Lights" style="width:100%; height:250px;">
+            <a href="changepsw.html" target="_blank">
+            <div class="centered" style="color:black;">Tuesday</div>
+            </a>
+        </div> 
+      </div>
+      <div class="col-md-4" style="margin-top: 20px;">
+        <div class="thumbnail">
+            <img src="https://res.cloudinary.com/fleetnation/image/private/c_fit,w_1120/g_south,l_text:style_gothic2:%C2%A9%20Tipsy,o_20,y_10/g_center,l_watermark4,o_25,y_50/v1533019879/dqj09eeox5efoljbafkf.jpg" alt="Fjords" style="width:100%; height:250px;">
+            <a href="myprofile.html" target="_blank">
+            <div class="centered"; style="color:black;">Wednesday</div>
+            </a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="row">
+      <div class="col-md-4">
+        <div class="thumbnail">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSb1qWotNi0VAjo_KZPW33bNuzFjlratZqgNg&usqp=CAU" alt="Nature" style="width:100%; height:250px;">
+           <a href="fees.html" target="_blank">
+            <div class="centered"; style="color:black;">Thursday</div>
+            </a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="thumbnail">
+            <img src="https://c.ndtvimg.com/2019-06/13nns16o_curd-rice_625x300_26_June_19.jpg?im=FaceCrop,algorithm=dnn,width=1200,height=886" alt="Nature" style="width:100%; height:250px;">
+            <a href="MessMenu.html" target="_blank">
+            <div class="centered" style="color:#200000;">Friday</div>
+            </a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="thumbnail">
+            <img src="https://b.zmtcdn.com/data/reviews_photos/b9e/1732d916e87ed3e76ae801dbca8a5b9e_1512139087.jpg" alt="Fjords" style="width:100%; height:250px;">
+             <a href="complain.html" target="_blank">
+            <div class="centered"; style="color:black;">Saturday</div>
+            </a> 
+           </div>
+      </div>
+    </div>
+  
+  </div>
+  </div>
+
+
+
+</body>
+</html>
+
